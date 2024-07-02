@@ -1,0 +1,2 @@
+Browser_Name = Chrome
+Browser_Path = C:\Users\PC\AppData\Local\Google\Chrome\User Data\Default
