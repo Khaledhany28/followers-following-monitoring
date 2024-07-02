@@ -41,6 +41,9 @@ class File_handling():
 
     def fileAppend(self, profiles: list[str], fileName: str):
 
+        if not os.path.isdir("Output"):
+            os.mkdir("Output")
+
         if not os.path.isdir(fr"Output\{self.username}"):
             os.makedirs(fr"Output\{self.username}")
             txt_list = open(fr"Output\{self.username}\{fileName.lower()}.txt", "x")
